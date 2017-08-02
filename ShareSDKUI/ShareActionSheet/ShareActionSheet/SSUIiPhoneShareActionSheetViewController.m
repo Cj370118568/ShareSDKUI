@@ -87,35 +87,35 @@ static const CGFloat maxPlatformsItemW = 105;
         }
         else
         {
-            //计算行数和列数
-            if ([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple)
-            {
-                _totalColumns = 4;
-                
-                CGFloat temWidth;
-                
-                //如果是横屏
-                if (UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation))
-                {
-                    temWidth = _screenH;
-                }
-                else
-                {
-                    temWidth = _screenW;
-                }
-                
-                while ( maxPlatformsItemW < temWidth/_totalColumns)
-                {
-                    _totalColumns = _totalColumns + 1;
-                }
-                
-                _platformItemH = temWidth/_totalColumns;
-                _pageViewH = _platformItemH * _totalRows + 35;
-            }
-            else
-            {
+//            //计算行数和列数
+//            if ([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple)
+//            {
+//                _totalColumns = 4;
+//
+//                CGFloat temWidth;
+//
+//                //如果是横屏
+//                if (UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation))
+//                {
+//                    temWidth = _screenH;
+//                }
+//                else
+//                {
+//                    temWidth = _screenW;
+//                }
+//
+//                while ( maxPlatformsItemW < temWidth/_totalColumns)
+//                {
+//                    _totalColumns = _totalColumns + 1;
+//                }
+//
+//                _platformItemH = temWidth/_totalColumns;
+//                _pageViewH = _platformItemH * _totalRows + 35;
+//            }
+//            else
+//            {
                 _totalColumns = (contentViewW + temIntervalW) / (temIntervalW + platformItemW);
-            }
+//            }
             
             //根据集成平台个数决定高度
             if ([self.items count] <= _totalRows * _totalColumns)
@@ -123,10 +123,10 @@ static const CGFloat maxPlatformsItemW = 105;
                 _totalRows = ceil([self.items count]*1.0 / _totalColumns);
                 _pageViewH = _platformItemH * _totalRows + _intervalH * (_totalRows - 1) + 70;
                 
-                if ([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple)
-                {
-                    _pageViewH = _platformItemH * _totalRows;
-                }
+//                if ([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple)
+//                {
+//                    _pageViewH = _platformItemH * _totalRows;
+//                }
             }
 
             _pageView = [[SSUIPageView alloc] initWithItems:items totalColumn:_totalColumns totalRow:_totalRows platformItemH:_platformItemH];
@@ -323,10 +323,10 @@ static const CGFloat maxPlatformsItemW = 105;
         _totalRows = ceil([self.items count]*1.0 / _totalColumns);
         _pageViewH = _platformItemH * _totalRows + _intervalH * (_totalRows - 1) + 70;
         
-        if ([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple)
-        {
-            _pageViewH = _platformItemH * _totalRows;
-        }
+//        if ([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple)
+//        {
+//            _pageViewH = _platformItemH * _totalRows;
+//        }
     }
     
     if (UIInterfaceOrientationIsLandscape(self.interfaceOrientation))
@@ -348,10 +348,10 @@ static const CGFloat maxPlatformsItemW = 105;
     _pageView.totalRow = self.totalRows;
     _pageView.platformItemW = _platformItemH;
     
-    if([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple)
-    {
-        _pageView.platformItemW = self.platformItemH;
-    }
+//    if([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple)
+//    {
+//        _pageView.platformItemW = self.platformItemH;
+//    }
     
     if ([SSUIShareActionSheetStyle sharedInstance].isCancelButtomHidden)
     {
@@ -369,11 +369,11 @@ static const CGFloat maxPlatformsItemW = 105;
     _pageView.totalRow = self.totalRows;
     _pageView.platformItemW = _platformItemH;
     
-    if([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple)
-    {
-        _pageView.platformItemW = self.platformItemH;
-    }
-    
+//    if([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple)
+//    {
+//        _pageView.platformItemW = self.platformItemH;
+//    }
+//
     if ([SSUIShareActionSheetStyle sharedInstance].isCancelButtomHidden)
     {
         _pageView.frame = CGRectMake(_spacing, _screenH - _spacing - _pageViewH , _screenW -  2 * _spacing, _pageViewH);

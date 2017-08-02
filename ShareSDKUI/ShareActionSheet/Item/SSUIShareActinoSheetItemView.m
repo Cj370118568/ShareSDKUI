@@ -36,13 +36,13 @@ static const CGFloat iconPercentage = 0.35;
         
         UILabel *name = [[UILabel alloc] init];
         name.textAlignment = NSTextAlignmentCenter;
-        name.textColor = [UIColor blackColor];
+        name.textColor = [UIColor colorWithRed:85/255.0 green:85/255.0 blue:85/255.0 alpha:1];
         name.backgroundColor = [UIColor clearColor];
-        name.font = [UIFont systemFontOfSize:12];
+        name.font = [UIFont fontWithName:@"PingFangSC-Light" size:10.0];
         //iOS10以上中文大小比iOS以下大,因此字体略缩小
         if ([MOBFDevice versionCompare:@"10.0"] >= 0)
         {
-            name.font = [UIFont systemFontOfSize:11.5];
+            name.font = [UIFont systemFontOfSize:10];
         }
         _itemW = 60;
 
@@ -68,7 +68,7 @@ static const CGFloat iconPercentage = 0.35;
         
         if ([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple && ![MOBFDevice isPad])
         {
-            _itemW = itemWidth;
+//            _itemW = itemWidth;
         }
 
         [self addTarget:self action:@selector(itemClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -99,13 +99,13 @@ static const CGFloat iconPercentage = 0.35;
     
     self.platformIcon.frame = CGRectMake(0, 0, _itemW, iconH);
     CGFloat nameY = CGRectGetMaxY(self.platformIcon.frame);
-    self.nameLabel.frame = CGRectMake(0, nameY, _itemW, nameH);
-    
-    if ([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple && ![MOBFDevice isPad])
-    {
-        self.platformIcon.frame = CGRectMake((_itemW - _itemW * iconPercentage)/2 , _itemW*0.15, _itemW * iconPercentage, _itemW *iconPercentage);
-        self.nameLabel.frame = CGRectMake(1, _itemW - nameH - _itemW*0.15 , _itemW -2, nameH);
-    }
+    self.nameLabel.frame = CGRectMake(0, nameY + 12, _itemW, nameH);
+//    
+//    if ([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple && ![MOBFDevice isPad])
+//    {
+//        self.platformIcon.frame = CGRectMake((_itemW - _itemW * iconPercentage)/2 , _itemW*0.15, _itemW * iconPercentage, _itemW *iconPercentage);
+//        self.nameLabel.frame = CGRectMake(1, _itemW - nameH - _itemW*0.15 , _itemW -2, nameH);
+//    }
 }
 
 @end

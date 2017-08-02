@@ -38,11 +38,11 @@
         _topIntervalH = 35.0;
         _pageControlH = 35.0;
 
-        if ([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple && ![MOBFDevice isPad])
-        {
-            _topIntervalH = 0.0;
-            _platformItemW = itemH;
-        }
+//        if ([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple && ![MOBFDevice isPad])
+//        {
+//            _topIntervalH = 0.0;
+//            _platformItemW = itemH;
+//        }
         
         self.backgroundColor = [UIColor whiteColor];
         
@@ -198,10 +198,10 @@
         _platformView.platformItemW = self.platformItemW;
         _platformView.items = arr;
         
-        if ([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple && ![MOBFDevice isPad])
-        {
-            platformViewH = _platformItemW * _platformView.totalRow;
-        }
+//        if ([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple && ![MOBFDevice isPad])
+//        {
+//            platformViewH = _platformItemW * _platformView.totalRow;
+//        }
         
         _platformView.frame = CGRectMake(index * platformViewW, _topIntervalH, platformViewW, platformViewH);
         
@@ -266,10 +266,10 @@
 {
     [super drawRect:rect];
     
-    if ([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple && ![MOBFDevice isPad])
-    {
-        [self needRedrawRect:rect];
-    }
+//    if ([SSUIShareActionSheetStyle sharedInstance].style == ShareActionSheetStyleSimple && ![MOBFDevice isPad])
+//    {
+//        [self needRedrawRect:rect];
+//    }
 }
 
 @end

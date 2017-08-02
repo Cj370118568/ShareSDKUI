@@ -22,6 +22,14 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		9CA504AC1F31AA0F00664967 /* ShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA504AB1F31AA0F00664967 /* ShareSDK.framework */; };
+		9CA504B11F31AA1700664967 /* ShareSDKConfigFile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA504AD1F31AA1700664967 /* ShareSDKConfigFile.framework */; };
+		9CA504B21F31AA1700664967 /* ShareSDKUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9CA504AE1F31AA1700664967 /* ShareSDKUI.bundle */; };
+		9CA504B31F31AA1700664967 /* ShareSDKExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA504AF1F31AA1700664967 /* ShareSDKExtension.framework */; };
+		9CA504B41F31AA1700664967 /* ShareSDKConfigFile.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9CA504B01F31AA1700664967 /* ShareSDKConfigFile.bundle */; };
+		9CA504B81F31AA2100664967 /* ShareSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9CA504B51F31AA2000664967 /* ShareSDK.bundle */; };
+		9CA504B91F31AA2100664967 /* ShareSDKConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA504B61F31AA2000664967 /* ShareSDKConnector.framework */; };
+		9CA504BA1F31AA2100664967 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA504B71F31AA2000664967 /* MOBFoundation.framework */; };
 		D0DD5A7C1B329AA7001D6161 /* ShareSDKUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DD5A7B1B329AA7001D6161 /* ShareSDKUI.m */; };
 		D0DD5A7F1B329AE5001D6161 /* ShareSDK+SSUI.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DD5A7E1B329AE5001D6161 /* ShareSDK+SSUI.m */; };
 		DE0F12F81B84685B00B6E543 /* RennSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE0F12F31B84685B00B6E543 /* RennSDK.bundle */; };
@@ -161,6 +169,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9CA504AB1F31AA0F00664967 /* ShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDK.framework; path = ../../ShareSDK/ShareSDK.framework; sourceTree = "<group>"; };
+		9CA504AD1F31AA1700664967 /* ShareSDKConfigFile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDKConfigFile.framework; path = ../../ShareSDK/Support/Optional/ShareSDKConfigFile.framework; sourceTree = "<group>"; };
+		9CA504AE1F31AA1700664967 /* ShareSDKUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ShareSDKUI.bundle; path = ../../ShareSDK/Support/Optional/ShareSDKUI.bundle; sourceTree = "<group>"; };
+		9CA504AF1F31AA1700664967 /* ShareSDKExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDKExtension.framework; path = ../../ShareSDK/Support/Optional/ShareSDKExtension.framework; sourceTree = "<group>"; };
+		9CA504B01F31AA1700664967 /* ShareSDKConfigFile.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ShareSDKConfigFile.bundle; path = ../../ShareSDK/Support/Optional/ShareSDKConfigFile.bundle; sourceTree = "<group>"; };
+		9CA504B51F31AA2000664967 /* ShareSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ShareSDK.bundle; path = ../../ShareSDK/Support/Required/ShareSDK.bundle; sourceTree = "<group>"; };
+		9CA504B61F31AA2000664967 /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDKConnector.framework; path = ../../ShareSDK/Support/Required/ShareSDKConnector.framework; sourceTree = "<group>"; };
+		9CA504B71F31AA2000664967 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MOBFoundation.framework; path = ../../ShareSDK/Support/Required/MOBFoundation.framework; sourceTree = "<group>"; };
 		D056D8C51B32CD74000C7178 /* SSUITypeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSUITypeDef.h; sourceTree = "<group>"; };
 		D0DD5A701B329802001D6161 /* ShareSDKUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareSDKUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DD5A741B329802001D6161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -328,6 +344,7 @@
 				DE0F13011B84691100B6E543 /* AssetsLibrary.framework in Frameworks */,
 				DE0F12FF1B84690A00B6E543 /* MediaPlayer.framework in Frameworks */,
 				DE148B6C1C50852A00B50AAD /* TencentOpenAPI.framework in Frameworks */,
+				9CA504B91F31AA2100664967 /* ShareSDKConnector.framework in Frameworks */,
 				DE0F12FD1B84690300B6E543 /* CoreLocation.framework in Frameworks */,
 				DEA563851BE7604F002E9552 /* KakaoOpenSDK.framework in Frameworks */,
 				DE804EF91C240A4F00ACE20B /* libYixinSDK.a in Frameworks */,
@@ -337,7 +354,9 @@
 				DE0F12F91B84685B00B6E543 /* RennSDK.framework in Frameworks */,
 				DE93B0D61B4E4EB600459A2A /* Social.framework in Frameworks */,
 				DE93B0D41B4E4EAC00459A2A /* ImageIO.framework in Frameworks */,
+				9CA504BA1F31AA2100664967 /* MOBFoundation.framework in Frameworks */,
 				DE93B0D21B4E4EA700459A2A /* JavaScriptCore.framework in Frameworks */,
+				9CA504B11F31AA1700664967 /* ShareSDKConfigFile.framework in Frameworks */,
 				DE93B0D01B4E4EA100459A2A /* libstdc++.dylib in Frameworks */,
 				DE93B0CE1B4E4E9A00459A2A /* libz.dylib in Frameworks */,
 				DE93B0CC1B4E4E9400459A2A /* libicucore.dylib in Frameworks */,
@@ -348,9 +367,11 @@
 				DEA563811BE76048002E9552 /* libAPOpenSdk.a in Frameworks */,
 				DE93B0AF1B4E4CBD00459A2A /* libWeiboSDK.a in Frameworks */,
 				DE93B0BE1B4E4E1300459A2A /* ShareSDKUI.framework in Frameworks */,
+				9CA504AC1F31AA0F00664967 /* ShareSDK.framework in Frameworks */,
 				DEA264241B6F770A00840353 /* ShareSDKUI.framework in Frameworks */,
 				DE93B0531B4E49FE00459A2A /* UIKit.framework in Frameworks */,
 				DE93B0941B4E4C6900459A2A /* ShareSDKExtension.framework in Frameworks */,
+				9CA504B31F31AA1700664967 /* ShareSDKExtension.framework in Frameworks */,
 				DE93B04F1B4E49FE00459A2A /* Foundation.framework in Frameworks */,
 				DE93B0921B4E4C6900459A2A /* ShareSDK.framework in Frameworks */,
 			);
@@ -532,7 +553,15 @@
 		DE93B0541B4E49FE00459A2A /* TestShareSDKUI */ = {
 			isa = PBXGroup;
 			children = (
+				9CA504B71F31AA2000664967 /* MOBFoundation.framework */,
+				9CA504B51F31AA2000664967 /* ShareSDK.bundle */,
+				9CA504B61F31AA2000664967 /* ShareSDKConnector.framework */,
+				9CA504AF1F31AA1700664967 /* ShareSDKExtension.framework */,
+				9CA504AE1F31AA1700664967 /* ShareSDKUI.bundle */,
+				9CA504AB1F31AA0F00664967 /* ShareSDK.framework */,
 				DE7E28241B9554BD00B6EF17 /* sharesdk1.png */,
+				9CA504B01F31AA1700664967 /* ShareSDKConfigFile.bundle */,
+				9CA504AD1F31AA1700664967 /* ShareSDKConfigFile.framework */,
 				DE75D3851B70536D00A1F1CD /* ShareSDKUI.bundle */,
 				DEA264231B6F770A00840353 /* ShareSDKUI.framework */,
 				DECF63AB1B54B53100B6197E /* LaunchScreen.xib */,
@@ -831,6 +860,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA504B41F31AA1700664967 /* ShareSDKConfigFile.bundle in Resources */,
 				DECF63AC1B54B53100B6197E /* LaunchScreen.xib in Resources */,
 				DE75D3861B70536D00A1F1CD /* ShareSDKUI.bundle in Resources */,
 				DE93B0651B4E49FE00459A2A /* Main_iPad.storyboard in Resources */,
@@ -843,8 +873,10 @@
 				DE0F12F81B84685B00B6E543 /* RennSDK.bundle in Resources */,
 				DE93B0B01B4E4CBD00459A2A /* WeiboSDK.bundle in Resources */,
 				DE93B0621B4E49FE00459A2A /* Main_iPhone.storyboard in Resources */,
+				9CA504B21F31AA1700664967 /* ShareSDKUI.bundle in Resources */,
 				DE93B0591B4E49FE00459A2A /* InfoPlist.strings in Resources */,
 				DE0F130A1B84697C00B6E543 /* Icon.png in Resources */,
+				9CA504B81F31AA2100664967 /* ShareSDK.bundle in Resources */,
 				DE0F13091B84697C00B6E543 /* Icon-72@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

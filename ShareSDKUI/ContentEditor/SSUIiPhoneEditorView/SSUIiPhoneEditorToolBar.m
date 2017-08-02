@@ -20,7 +20,7 @@
 #define KEY_USERICON @"uicon"
 #define KEY_IS_GET_INFO @"isGetInfo"
 
-#define ITEM_WIDTH 35.0
+#define ITEM_WIDTH 50.0
 #define LABEL_WIDTH 60.0
 
 #define ITEM_ID @"platformItem"
